@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tentang</title>
+    <title>Booking </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-
     <!-- Icon Atas -->
-    <link rel="icon" href="img/logo.png" type="iamge/x-icon">
+    <link rel="icon" href="../img/logo.png" type="iamge/x-icon">
 
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
@@ -18,14 +17,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="../lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -96,7 +95,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="../index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">Tentang</a>
                     <a href="service.html" class="nav-item nav-link">Pelayanan</a>
                     <a href="price.html" class="nav-item nav-link">CekHarga</a>
@@ -109,89 +108,93 @@
     <!-- Navbar End -->
 
 
-    <!-- About Start -->
-    <div class="container py-5">
-        <div class="row py-5">
-            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
-                <h4 class="text-secondary mb-3">Tentang Kami</h4>
-                <h1 class="display-4 mb-4"><span class="text-primary">Umah</span>Kurmang<span class="text-secondary"></span></h1>
-                <h5 class="text-muted mb-3">Kami Menjual Macam Macam Jenis Kelomang Serta menjadi Wadah Edukasi</h5>
-                <p class="mb-4">Admin kita terdiri 2 orang dan jika ingin membeli offline bisa ke alun alun saat hari minggu di pintu utama alun alun</p>
-                <ul class="list-inline">
-                    <li>
-                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Pelayanan Ramah</h5>
-                    </li>
-                    <li>
-                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Bergaransi</h5>
-                    </li>
-                    <li>
-                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Murah Meriah</h5>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-5">
-                <div class="row px-3">
-                    <div class="col-12 p-0">
-                        <img class="img-fluid w-100" src="img/c-1.jpeg" alt="">
+    <!-- Booking Start -->
+    <br><br>
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <form class="py-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder=" nama " required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 p-4" placeholder="Email" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Hari Pemesanan" data-target="#date" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder=" Jam Pemesanan" data-target="#time" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select border-0 px-4" style="height: 47px;">
+                                    <option selected>Pilih Pembelian</option>
+                                    <option value="1">Paket Kelomang 50k</option>
+                                    <option value="2">Paket Kelomang 20-30K</option>
+                                    <option value="3">Paket Kelomang 1-15k</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Pesan Sekarang!!</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-6 p-0">
-                        <img class="img-fluid w-100" src="img/c-4.jpeg" alt="">
-                    </div>
-                    <div class="col-6 p-0">
-                        <img class="img-fluid w-100" src="img/c-3.jpeg" alt="">
+                </div>
+                <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+                    <h4 class="text-secondary mb-3">Keunggulan UmahKurmang</h4>
+                    <h1 class="display-4 mb-4">Umah <span class="text-primary">Kurmang</span></h1>
+                    <p> </p>
+                    <div class="row py-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-house font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Konsultasi hewan</h5>
+                                </div>
+                                <p> Jika anda membeli kelomang disini, anda akan mendapat pelayanan saat ada kendala di rumah
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-food font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Garansi</h5>
+                                </div>
+                                <p>Garansi pembelian min 1 hari setelah pembelian max 3 hari </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-grooming font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Petunjuk pemeliharaan</h5>
+                                </div>
+                                <p class="m-0">Pembeli akan di pandu saat memelihara kelomang</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-toy font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Discount</h5>
+                                </div>
+                                <p class="m-0">Setiap pelanggan akan mendapat diskon acesoris kelomang</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
-
-
-
-    <!-- Team Start -->
-    <div class="container mt-5 pt-5 pb-3">
-        <div class="d-flex flex-column text-center mb-5">
-            <h4 class="text-secondary mb-3">Admin UmahKurmang</h4>
-            <h1 class="display-4 m-0">Umah<span class="text-primary">Kurmang</span></h1>
-        </div>
-        <div class="row">
-            <div class=" col-md-6">
-                <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/admin 1.jpeg" alt="">
-                    <div class="card-body text-center p-0">
-                        <div class="team-text d-flex flex-column justify-content-center bg-light">
-                            <h5>Irham Auliaq</h5>
-                            <i>Owner</i>
-                        </div>
-                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
-                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-whatsapp"></i></a>
-                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-md-6">
-                <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" width="100" src="img/admin 2.jpeg" alt="">
-                    <div class="card-body text-center p-0">
-                        <div class="team-text d-flex flex-column justify-content-center bg-light">
-                            <h5>Irham Auliaq</h5>
-                            <i>Owner</i>
-                        </div>
-                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
-                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-whatsapp"></i></a>
-                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
+    <br><br>
+    <!-- Booking Start -->
 
 
     <!-- Footer Start -->
@@ -219,7 +222,7 @@
                     <div class="col-md-4 mb-5">
                         <h5 class="text-primary mb-4">Popular Links</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="../index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
                             <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Tentang</a>
                             <a class="text-white mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Pelayanan</a>
                             <a class="text-white mb-2" href="price.html"><i class="fa fa-angle-right mr-2"></i>Cekharga</a>
@@ -246,7 +249,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
 
 
     <!-- Back to Top -->
